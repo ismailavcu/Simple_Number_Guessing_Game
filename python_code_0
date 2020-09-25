@@ -1,0 +1,22 @@
+import random
+
+a= int(input('Please enter a number:'))
+b= int(input('Please enter another number which is greater :'))
+while a>b:
+    print('Second number must be greater!! \n Please reenter:')
+    a= int(input('Please enter a number:'))
+    b= int(input('Please enter another number which is greater :'))
+
+c= random.randint(a, b+1)
+print(f'I took a number between {a} and {b}. \n Can you guess it?')
+
+u= 0
+while u != c:
+    u= int(input('Your guess..?'))
+    if u>c:
+        print('Below!')
+    if u<c:
+        print('Above!')
+    if u==c:
+        break
+print('Congratulations!, Correct guess')
