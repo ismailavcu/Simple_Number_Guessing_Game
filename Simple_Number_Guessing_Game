@@ -7,7 +7,7 @@ while a>b:
     a= int(input('Please enter a number:'))
     b= int(input('Please enter another number which is greater :'))
 
-c= random.randint(a, b+1)
+c= random.randint(a, b)
 print(f'I took a number between {a} and {b}. \n Can you guess it?')
 
 u= 0
